@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rethink Organic | Booth</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#253468',
+              'navy-deep': '#1a2444',
+              sage: '#8BA888',
+              'sage-light': '#b5cdb3',
+              orange: '#E8621A',
+              cream: '#f5f3ec',
+              'cream-dark': '#eaddcc'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Jost"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    /* Hide scrollbar for the nav pill */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-brand-navy bg-brand-cream pb-24">
+
+  <!-- ================= FLOATING CUTE NAV ================= -->
+  <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-white/95 backdrop-blur-lg shadow-2xl border border-brand-navy/10 rounded-full px-2 py-2 flex items-center gap-1 md:gap-2 transition-all w-max max-w-[90vw] overflow-x-auto no-scrollbar">
+    <a href="#hero" class="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-brand-cream text-brand-navy text-sm font-medium transition-colors whitespace-nowrap">
+      <span>🏠</span> <span class="hidden md:inline">Home</span>
+    </a>
+    <a href="#story" class="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-brand-cream text-brand-navy text-sm font-medium transition-colors whitespace-nowrap">
+      <span>📖</span> <span class="hidden md:inline">Our Story</span>
+    </a>
+    <a href="#mkuulima" class="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-brand-cream text-brand-navy text-sm font-medium transition-colors whitespace-nowrap">
+      <span>🪰</span> <span class="hidden md:inline">Mkuu-lima Platform</span>
+    </a>
+    <a href="#connect" class="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-brand-cream text-brand-navy text-sm font-medium transition-colors whitespace-nowrap">
+      <span>💬</span> <span class="hidden md:inline">Connect</span>
+    </a>
+  </nav>
+
+  <!-- ================= SECTION 1: Rethink Organic Explainer ================= -->
+  <section id="hero" class="min-h-screen flex flex-col justify-between relative p-6 md:p-12 lg:p-16 border-b border-brand-navy/10">
+
+    <header class="flex justify-between items-start mb-16">
+      <div class="flex items-center gap-4">
+        <div class="w-16 h-16 flex items-center justify-center">
+          <img src="./img/rethink_logo.png" alt="Rethink Organic Logo" class="w-full h-full object-contain" />
+        </div>
+        <div class="tracking-widest uppercase text-sm font-medium text-brand-navy">
+          Rethink Organic
+        </div>
+      </div>
+      <div class="text-right tracking-widest uppercase text-xs md:text-sm font-medium text-brand-sage hidden sm:block">
+        Muguga Ward<br/>
+        Kiambu County, Kenya
+      </div>
+    </header>
+
+    <div class="max-w-4xl flex-grow flex flex-col justify-center">
+      <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-sage mb-6">
+        A Circular Bioeconomy Venture
+      </div>
+      <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-semibold leading-none mb-8 text-brand-navy">
+        Rethinking<br/>
+        agriculture,<br/>
+        <em class="text-brand-orange font-medium italic">one farm at<br/>a time.</em>
+      </h1>
+
+      <!-- CTA Immediately after headline -->
+      <div class="mb-8">
+        <a href="https://docs.google.com/forms/u/4/d/1F5g6IHVRESZlbfC_zQwj6F9Mu_sxLR6h9DWEHEy6zDA/edit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-orange text-white rounded-full py-4 px-8 font-medium hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+          <span class="text-lg">Join the Founding Farmer Waitlist</span>
+          <span class="text-xl">&rarr;</span>
+        </a>
+      </div>
+
+      <p class="font-sans text-lg md:text-xl text-brand-navy max-w-2xl leading-relaxed mb-8">
+        "We turn organic waste into animal feed, organic fertiliser, and farm intelligence &mdash; building a circular future where technology empowers smallholder farmers and agriculture works in harmony with nature."
+      </p>
+      <div class="font-serif text-3xl md:text-4xl text-brand-navy italic font-medium">
+        Soil Health <span class="text-brand-orange">&equals;</span> Soil Wealth
+      </div>
+    </div>
+
+    <div class="mt-16 bg-brand-navy text-white rounded-lg p-6 md:p-8 flex flex-col md:flex-row gap-8 justify-between">
+      <div class="flex-1 md:border-r border-white/20 pr-4">
+        <div class="text-brand-orange text-sm font-medium mb-1">Layer 1</div>
+        <div class="text-base font-light">Black Soldier Fly biotechnology</div>
+      </div>
+      <div class="flex-1 md:border-r border-white/20 px-4">
+        <div class="text-brand-orange text-sm font-medium mb-1">Layer 2</div>
+        <div class="text-base font-light">Circular economy design</div>
+      </div>
+      <div class="flex-1 md:border-r border-white/20 px-4">
+        <div class="text-brand-orange text-sm font-medium mb-1">Layer 3</div>
+        <div class="text-base font-light">Mkuu-lima digital intelligence</div>
+      </div>
+      <div class="flex-1 pl-4">
+        <div class="text-brand-orange text-sm font-medium uppercase tracking-widest mb-1">Grounded In</div>
+        <div class="text-base font-light tracking-widest">SDG 2 &middot; 12 &middot; 13</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1A: Our Story ================= -->
+  <section id="story" class="bg-brand-cream p-6 md:p-12 lg:p-16 border-b border-brand-navy/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between items-end border-b border-brand-navy mb-12 pb-4">
+        <h2 class="font-serif text-5xl md:text-6xl font-semibold text-brand-navy">Our Story</h2>
+        <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange">Founded 2024</div>
+      </div>
+
+      <div class="relative pl-8 border-l-2 border-dashed border-brand-sage mb-12">
+        <!-- 2022 -->
+        <div class="mb-12 relative">
+          <div class="absolute -left-10 mt-1 w-4 h-4 rounded-full bg-brand-orange"></div>
+          <div class="tracking-widest text-brand-sage font-medium mb-4">2022</div>
+          <p class="text-lg md:text-xl font-light leading-relaxed mb-6">
+            <strong class="font-semibold">Everything</strong> started with a simple question: <strong class="font-semibold italic">what if the challenges facing agriculture weren't separate problems, but connected ones?</strong> In <strong class="font-semibold">2022</strong>, Kenya experienced <strong class="font-semibold">one of its worst droughts</strong> in decades. Across farming communities, feed costs rose, productivity declined, and food security weakened &mdash; while tonnes of organic waste continued to be discarded every day.
+          </p>
+          <div class="bg-[#f2ece4] p-6 md:p-8 border-l-4 border-brand-orange">
+            <p class="font-serif italic text-2xl md:text-3xl font-medium text-brand-navy">"The real barrier wasn't the biology &mdash; it was knowing what was happening inside the colony before it was too late."</p>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="relative">
+          <div class="absolute -left-10 mt-1 w-4 h-4 rounded-full bg-brand-orange"></div>
+          <div class="tracking-widest text-brand-sage font-medium mb-4">2024</div>
+          <p class="text-lg md:text-xl font-light leading-relaxed mb-6">
+            While studying <strong class="font-semibold">Biology</strong> at the <strong class="font-semibold">University of Nairobi</strong>, our founder, <strong class="font-semibold">Abigail Ndekei</strong>, encountered Black Soldier Fly biotechnology: a nature-based process capable of converting organic waste into sustainable animal feed and organic fertiliser.
+          </p>
+          <p class="text-lg md:text-xl font-light leading-relaxed mb-6">
+            In <strong class="font-semibold">2024</strong>, Rethink Organic was founded to <strong class="font-semibold italic">help smallholder farmers cut production costs, manage waste sustainably, and build climate-resilient livelihoods</strong> through circular agriculture &mdash; because agriculture shouldn't have to choose between productivity and sustainability.
+          </p>
+          <p class="text-lg md:text-xl font-light leading-relaxed">
+            Farmers experimenting with the practice often <strong class="font-semibold">struggled to maintain the stable temperature and humidity BSF colonies need</strong>, with problems only visible after production had already dropped. That gap inspired a <strong class="font-semibold">bigger vision</strong>: pairing biotechnology with digital monitoring to make sustainable farming easier to get right, not just easier to start.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full aspect-video md:aspect-[21/9] rounded-lg overflow-hidden shadow-lg">
+        <img src="./img/founder_with_farmer_community.png" alt="Founder with Farmer Community, Muguga Ward" class="w-full h-full object-cover object-center" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1B: What We Do ================= -->
+  <section class="bg-[#f2ece4] p-6 md:p-12 lg:p-16 border-b-8 border-brand-navy-deep">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-between items-end border-b border-brand-navy mb-12 pb-4">
+        <h2 class="font-serif text-5xl md:text-6xl font-semibold text-brand-navy">What We Do</h2>
+        <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange">Turning waste into opportunity</div>
+      </div>
+
+      <!-- Diagram Flow -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-16 text-center">
+        <!-- Input -->
+        <div class="w-48 h-48 rounded-full bg-brand-orange text-white flex flex-col justify-center items-center shadow-lg">
+          <div class="uppercase tracking-widest text-xs mb-2">Input</div>
+          <div class="text-xl font-medium">Organic Waste</div>
+        </div>
+
+        <div class="text-brand-sage text-4xl hidden md:block">&rarr;</div>
+
+        <!-- Bioconversion -->
+        <div class="w-56 h-56 rounded-full bg-brand-navy-deep text-white flex flex-col justify-center items-center shadow-lg relative">
+          <div class="uppercase tracking-widest text-xs text-brand-orange mb-2">Bioconversion</div>
+          <div class="text-2xl font-medium px-4">Black Soldier Fly Farming</div>
+          <img src="./img/BSF_Image.png" alt="Black Soldier Fly" class="absolute -bottom-6 w-24 h-24 rounded-full border-4 border-[#f2ece4] object-cover shadow-md" />
+        </div>
+
+        <div class="flex flex-col gap-4 text-brand-orange text-2xl hidden md:flex">
+           <div class="rotate-[-30deg]">&rarr;</div>
+           <div>&rarr;</div>
+           <div class="rotate-[30deg]">&rarr;</div>
+        </div>
+
+        <!-- Outputs -->
+        <div class="flex flex-col gap-6 w-full md:w-auto items-center">
+          <div class="flex flex-col md:flex-row items-center gap-4 w-full">
+            <div class="w-32 h-32 rounded-full bg-brand-sage flex items-center justify-center text-white text-lg font-medium shadow-md">Animal<br/>Feed</div>
+            <img src="./img/animal_feed_image.png" alt="Animal Feed" class="w-24 h-24 rounded-full border-4 border-[#f2ece4] object-cover shadow-sm" />
+          </div>
+          <div class="flex flex-col md:flex-row items-center gap-4 w-full">
+            <div class="w-32 h-32 rounded-full bg-brand-sage flex items-center justify-center text-white text-lg font-medium shadow-md">Organic<br/>Frass</div>
+            <img src="./img/organic_frass.jfif" alt="Organic Frass" class="w-24 h-24 rounded-full border-4 border-[#f2ece4] object-cover shadow-sm" />
+          </div>
+          <div class="flex flex-col md:flex-row items-center gap-4 w-full">
+            <div class="w-32 h-32 rounded-full bg-brand-sage flex items-center justify-center text-white text-lg font-medium shadow-md text-center leading-tight">Mkuu-Lima<br/>Farm data</div>
+            <div class="w-24 h-24 rounded-full bg-white flex items-center justify-center text-xs text-brand-navy text-center p-2 shadow-inner border-4 border-[#f2ece4]">
+              <span class="text-brand-sage mr-1">✔</span> System Healthy
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 text-lg font-light leading-relaxed">
+        <div><strong class="text-brand-orange font-medium">Feed</strong> &mdash; high-protein feed ingredients that can reduce reliance on costly conventional feed.</div>
+        <div><strong class="text-brand-orange font-medium">Frass</strong> &mdash; nutrient-rich fertiliser that improves soil health and supports crop yields.</div>
+        <div><strong class="text-brand-orange font-medium">Mkuu-lima</strong> &mdash; our developing sensor platform, helping farmers track conditions and catch problems early.</div>
+      </div>
+
+      <div class="mb-16">
+        <h3 class="font-serif text-3xl md:text-4xl text-brand-navy font-semibold mb-6">Why It Matters</h3>
+        <div class="space-y-4 text-xl font-light border-l-2 border-brand-sage pl-6">
+          <div class="flex items-center gap-3"><span class="text-brand-sage text-2xl">✔</span> Rising livestock feed costs</div>
+          <div class="flex items-center gap-3"><span class="text-brand-sage text-2xl">✔</span> Organic waste management</div>
+          <div class="flex items-center gap-3"><span class="text-brand-sage text-2xl">✔</span> Soil Degradation</div>
+          <div class="flex items-center gap-3"><span class="text-brand-sage text-2xl">✔</span> Climate Resilience</div>
+          <div class="flex items-center gap-3"><span class="text-brand-sage text-2xl">✔</span> Farmer productivity</div>
+          <div class="flex items-center gap-3"><span class="text-brand-sage text-2xl">✔</span> Circular economy development</div>
+        </div>
+      </div>
+
+      <div class="w-full aspect-video rounded-lg overflow-hidden shadow-lg border-4 border-white">
+        <img src="./img/mkuu-lima_system_deployment.png" alt="Mkuu-lima System Deployment" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SECTION 2: Mkuu-lima Explainer ================= -->
+  <section id="mkuulima" class="min-h-screen bg-brand-navy text-white relative flex flex-col p-6 md:p-12 lg:p-16 overflow-hidden">
+    <div class="absolute bottom-0 right-0 w-[800px] h-[800px] pointer-events-none translate-x-1/4 translate-y-1/4">
+      <div class="absolute inset-0 rounded-full border border-brand-sage/30"></div>
+      <div class="absolute inset-10 rounded-full border border-brand-orange/30"></div>
+      <div class="absolute inset-20 rounded-full border border-brand-navy-deep/50 bg-brand-navy-deep/20"></div>
+    </div>
+
+    <header class="flex justify-between items-start mb-16 relative z-10">
+      <div class="flex items-center gap-4">
+        <div class="tracking-widest uppercase text-sm font-medium text-white">
+          Rethink<span class="text-brand-orange">&middot;</span>Organic
+        </div>
+      </div>
+      <div class="text-right tracking-widest uppercase text-xs md:text-sm font-medium text-slate-300 hidden sm:block">
+        Muguga Ward<br/>
+        Kiambu County, Kenya
+      </div>
+    </header>
+
+    <div class="max-w-3xl flex-grow flex flex-col justify-center relative z-10">
+      <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange mb-6">
+        Mkuu-lima &mdash; Product Brochure
+      </div>
+      <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold leading-none mb-8 text-white">
+        See inside every<br/>
+        <em class="text-brand-orange font-medium italic">rearing cycle.</em>
+      </h2>
+      <p class="font-serif text-xl md:text-2xl text-slate-200 max-w-2xl leading-relaxed italic font-light mb-10">
+        Mkuu-lima is our IoT monitoring platform for Black Soldier Fly farming &mdash; live sensor data, SMS alerts, and a mobile dashboard, built to give farmers and lenders confidence in what's happening on the ground.
+      </p>
+      <div>
+        <span class="inline-block border border-white/30 rounded-full px-6 py-2 text-xs tracking-widest uppercase hover:bg-white/10 transition-colors cursor-default">
+          In-House Tested
+        </span>
+      </div>
+    </div>
+
+    <div class="mt-16 flex justify-between items-end relative z-10 font-sans text-sm md:text-base text-slate-300">
+      <div>Soil Health &equals; Soil Wealth</div>
+      <div>
+        <strong class="text-white font-medium">IoT sensor kit</strong> &middot; SMS &plus; app alerts
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= SECTION 2A: Why Monitoring Matters ================= -->
+  <section class="bg-brand-cream p-6 md:p-12 lg:p-16 border-b border-brand-navy/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange mb-4">01 &mdash; Why Monitoring Matters</div>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold text-brand-navy mb-8">Rearing systems are easy to lose track of</h2>
+
+      <p class="text-xl md:text-2xl font-serif italic text-brand-navy/80 mb-12 leading-relaxed">
+        Black Soldier Fly rearing is a living process &mdash; temperature, moisture, and feeding all shift day to day. Left unmonitored, small drifts are easy to miss until they've already affected the batch.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h4 class="text-xl font-medium text-brand-navy mb-4">No visibility between visits</h4>
+          <p class="text-slate-600 font-light leading-relaxed">Farmers and field agents can only see conditions when they're physically at the kit &mdash; everything in between is a blind spot.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h4 class="text-xl font-medium text-brand-navy mb-4">Guesswork instead of data</h4>
+          <p class="text-slate-600 font-light leading-relaxed">Without readings to act on, farmers rely on instinct and experience alone to judge whether a cycle is on track.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <h4 class="text-xl font-medium text-brand-navy mb-4">Hard to verify from a distance</h4>
+          <p class="text-slate-600 font-light leading-relaxed">Lenders and partners financing a kit have no independent way to confirm it's installed, running, and being used as intended.</p>
+        </div>
+      </div>
+
+      <div class="bg-brand-navy-deep text-white p-8 md:p-12 rounded-2xl mb-16">
+        <div class="tracking-widest uppercase text-xs font-medium text-brand-orange mb-3">Our Answer</div>
+        <h3 class="font-serif text-3xl md:text-4xl font-semibold mb-6">Mkuu-lima puts a sensor inside the system</h3>
+        <p class="text-slate-300 text-lg md:text-xl font-light leading-relaxed">
+          A GSM/WiFi-connected sensor unit sits inside the rearing kit and reports back automatically &mdash; turning an opaque, manual process into one that farmers, agents, and lenders can all see and trust, from wherever they are.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="tracking-widest uppercase text-xs font-medium text-brand-orange mb-3">What It Feels Like</div>
+          <h4 class="font-serif text-3xl font-semibold text-brand-navy mb-4">An alert lands, not a mystery</h4>
+          <p class="text-brand-navy/80 text-lg font-light leading-relaxed">
+            When something needs attention, Mkuu-lima sends a plain-language SMS straight to the farmer's phone &mdash; illustrative example shown here &mdash; so the next step is always obvious.
+          </p>
+        </div>
+        <div class="bg-white border-2 border-brand-navy p-6 rounded-[2rem] shadow-lg max-w-sm mx-auto w-full">
+          <div class="flex justify-between text-xs text-slate-400 mb-6">
+            <span>&bull;&bull;&bull; NETWORK</span>
+            <span>SMS</span>
+          </div>
+          <div class="text-sm font-medium tracking-widest text-brand-navy mb-4">MKUULIMA</div>
+          <div class="bg-[#f2ece4] p-4 rounded-xl text-slate-700 text-sm leading-relaxed mb-4">
+            <strong class="text-brand-orange">Alert:</strong> Tray #04 temperature is above the normal range. Check the rearing unit when you get a chance.
+          </div>
+          <div class="text-center text-xs text-slate-400">Illustrative example</div>
+        </div>
+      </div>
+
+      <div class="mt-16 w-full aspect-[21/9] rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white">
+        <img src="./img/bsf-larvae-image.png" alt="Black Soldier Fly Larvae" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2B: How Mkuu-lima Works ================= -->
+  <section class="bg-brand-cream p-6 md:p-12 lg:p-16 border-b border-brand-navy/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange mb-4">02 &mdash; What It Does</div>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold text-brand-navy mb-12">One sensor, three ways to stay informed</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="w-10 h-10 bg-brand-orange text-white flex items-center justify-center font-serif text-xl mb-6">1</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-4">Real-time monitoring</h4>
+          <p class="text-slate-600 font-light leading-relaxed">The sensor unit continuously reads conditions inside the rearing system, day and night.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="w-10 h-10 bg-brand-sage text-white flex items-center justify-center font-serif text-xl mb-6">2</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-4">SMS alerts</h4>
+          <p class="text-slate-600 font-light leading-relaxed">Critical alerts reach the farmer by SMS via Africa's Talking &mdash; no smartphone or data connection required to receive them.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="w-10 h-10 bg-brand-navy text-white flex items-center justify-center font-serif text-xl mb-6">3</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-4">Mobile dashboard</h4>
+          <p class="text-slate-600 font-light leading-relaxed">A fully native app gives farmers and agents a fuller view of current status and recent history at a glance.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm">
+          <div class="w-10 h-10 bg-brand-sage text-white flex items-center justify-center font-serif text-xl mb-6">4</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-4">Remote visibility</h4>
+          <p class="text-slate-600 font-light leading-relaxed">Field teams and financing partners can check that a kit is installed and active without a site visit.</p>
+        </div>
+      </div>
+
+      <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange mb-4">03 &mdash; How It's Built</div>
+      <h2 class="font-serif text-4xl font-semibold text-brand-navy mb-12">From sensor to phone, in three hops</h2>
+
+      <div class="flex flex-col md:flex-row items-center gap-6 mb-12 text-center">
+        <div class="bg-white p-8 rounded-2xl shadow-sm flex-1 w-full border border-slate-100">
+          <div class="uppercase tracking-widest text-xs font-medium text-brand-orange mb-4">Hardware</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-2">Sensor unit</h4>
+          <p class="text-sm text-slate-500 font-light">GSM/WiFi-enabled, built from locally sourced components</p>
+        </div>
+        <div class="text-brand-orange text-2xl rotate-90 md:rotate-0">&rarr;</div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm flex-1 w-full border border-slate-100">
+          <div class="uppercase tracking-widest text-xs font-medium text-brand-orange mb-4">Backend</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-2">Cloud platform</h4>
+          <p class="text-sm text-slate-500 font-light">Django/FastAPI backend, containerised and hosted on Django.com</p>
+        </div>
+        <div class="text-brand-orange text-2xl rotate-90 md:rotate-0">&rarr;</div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm flex-1 w-full border border-slate-100">
+          <div class="uppercase tracking-widest text-xs font-medium text-brand-orange mb-4">Delivery</div>
+          <h4 class="text-xl font-medium text-brand-navy mb-2">SMS + app</h4>
+          <p class="text-sm text-slate-500 font-light">Africa's Talking SMS gateway and a React Native mobile dashboard</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-brand-sage flex flex-col md:flex-row items-center gap-6 mb-12">
+        <div class="bg-[#f2ece4] px-6 py-2 text-brand-navy text-sm font-medium tracking-widest uppercase whitespace-nowrap">TRL 3-4</div>
+        <p class="text-slate-600 font-light text-lg">
+          Validated through in-house testing and live demonstration at our HQ. Mkuu-lima is now moving into field deployment with our first onboarded cohort of farmers in Kiambu County.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-brand-sage flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <h4 class="font-serif text-3xl font-semibold text-brand-navy mb-4">What Mkuu-lima monitors</h4>
+          <p class="text-slate-600 font-light text-lg">Mkuu-lima is built around our Black Soldier Fly rearing kit. The sensor is what turns that biological process into something measurable and manageable day to day.</p>
+        </div>
+        <div class="bg-[#f2ece4] px-6 py-3 text-brand-navy text-sm font-medium tracking-widest uppercase whitespace-nowrap">BSF Rearing System</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2C: Kit Overview ================= -->
+  <section class="bg-[#f2ece4] p-6 md:p-12 lg:p-16 border-b border-brand-navy-deep border-b-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="tracking-widest uppercase text-xs md:text-sm font-medium text-brand-orange mb-4">04 &mdash; Illustrative Overview</div>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold text-brand-navy mb-8">What a Mkuu-lima kit looks like</h2>
+      <p class="text-xl font-serif italic text-brand-navy/80 mb-16 leading-relaxed">
+        A single sensor pod, mounted on the rearing kit, is what powers everything on the previous pages &mdash; from SMS alerts to the mobile dashboard.
+      </p>
+
+      <div class="flex flex-col gap-12 relative">
+        <!-- 1. Sensor Pod -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2 flex justify-center">
+            <img src="./img/sensor_pod_image.png" alt="Sensor Pod" class="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-white" />
+          </div>
+          <div class="w-full md:w-1/2 flex items-start gap-6">
+            <div class="text-4xl font-serif text-brand-orange font-semibold">1</div>
+            <div>
+              <h4 class="text-2xl font-medium text-brand-navy mb-2">Sensor pod</h4>
+              <p class="text-slate-600 font-light text-lg">Houses the GSM/WiFi module and onboard electronics that power SMS and app alerts.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. In-kit probe -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2 flex justify-center">
+            <img src="./img/in_kit_probe_image.png" alt="In-kit Probe" class="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-white" />
+          </div>
+          <div class="w-full md:w-1/2 flex items-start gap-6">
+            <div class="text-4xl font-serif text-brand-orange font-semibold">2</div>
+            <div>
+              <h4 class="text-2xl font-medium text-brand-navy mb-2">In-kit probe</h4>
+              <p class="text-slate-600 font-light text-lg">Takes readings from inside the rearing environment, where the larvae actually live.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Alert System -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2 flex justify-center">
+            <div class="flex gap-4">
+              <img src="./img/mobile_dashboard_app.png" alt="Mobile Dashboard App" class="w-32 h-64 object-cover rounded-3xl shadow-lg border-4 border-white" />
+              <img src="./img/mobile_dashboard_sms.png" alt="Mobile Dashboard SMS" class="w-32 h-64 object-cover rounded-3xl shadow-lg border-4 border-white" />
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 flex items-start gap-6">
+            <div class="text-4xl font-serif text-brand-orange font-semibold">3</div>
+            <div>
+              <h4 class="text-2xl font-medium text-brand-navy mb-2">Alert System</h4>
+              <p class="text-slate-600 font-light text-lg">Consistent readings deployed to Mkuu-lima app, readings exceed thresholds App and SMS alerts are triggered.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full max-w-2xl mx-auto bg-brand-navy-deep text-white p-6 rounded-full text-center mt-8 italic font-serif text-lg md:text-xl">
+          Note: Sensor kit design is modified to your farm size and design
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: Booth Interaction Cards ================= -->
+  <section id="connect" class="py-20 bg-brand-cream relative z-10">
+    <div class="max-w-2xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+        <h3 class="font-serif text-4xl text-brand-navy font-semibold mb-4">Explore Further</h3>
+        <p class="text-slate-600">Join our pilot, partner with us, or follow our journey.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl border border-brand-navy/10 p-8 mb-6 shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-3xl mb-4">🤝</div>
+        <div class="uppercase tracking-widest text-xs font-semibold text-brand-sage mb-2">Looking to work with us?</div>
+        <h4 class="font-serif text-2xl text-brand-navy font-semibold mb-3">We'd love to hear from you</h4>
+        <p class="text-slate-600 mb-6 font-light leading-relaxed">
+          We're interested in conversations with people and organisations working in agriculture, waste management, research, and impact investment.
+        </p>
+        <a href="https://docs.google.com/forms/d/1LZwxQF5lLJNk_oNTfIGrbSU-33vYmP-WM2D784gUUIo/edit" target="_blank" rel="noopener noreferrer" class="inline-block w-full text-center bg-brand-navy text-white rounded-full py-3 px-6 font-medium hover:bg-brand-navy-deep transition-colors">
+          Partner With Rethink
+        </a>
+      </div>
+
+      <div class="bg-brand-navy-deep text-white rounded-3xl p-8 shadow-lg">
+        <h4 class="font-serif text-3xl font-semibold mb-2 text-center">Let's connect.</h4>
+        <p class="text-slate-300 text-center mb-8 font-light text-sm">Have a question or want to talk to the team?</p>
+
+        <div class="flex flex-col gap-3">
+          <a href="tel:0118710829" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 rounded-2xl p-4 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-sage/20 flex items-center justify-center text-xl">📞</div>
+            <div>
+              <div class="font-medium">Call Us</div>
+              <div class="text-xs text-slate-400">011 871 0829</div>
+            </div>
+          </a>
+          <a href="mailto:rethinkorganic.org@gmail.com" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 rounded-2xl p-4 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-blue-500/20 flex items-center justify-center text-xl">📧</div>
+            <div>
+              <div class="font-medium">Email us</div>
+              <div class="text-xs text-slate-400">rethinkorganic.org@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.rethinkorganic.org" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 rounded-2xl p-4 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-xl">🌐</div>
+            <div>
+              <div class="font-medium">Website</div>
+              <div class="text-xs text-slate-400">Visit rethinkorganic.org</div>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/wearerethinkorganic/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 rounded-2xl p-4 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-brand-orange/20 flex items-center justify-center text-xl">📸</div>
+            <div>
+              <div class="font-medium">Instagram</div>
+              <div class="text-xs text-slate-400">@wearerethinkorganic</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/company/rethink-organic-network/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 rounded-2xl p-4 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center text-xl">💼</div>
+            <div>
+              <div class="font-medium">LinkedIn</div>
+              <div class="text-xs text-slate-400">Rethink Organic Network</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-brand-navy-deep py-8 text-center border-t border-white/10">
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <span class="font-serif text-white font-medium">Re-Think</span>
+      <span class="text-[10px] tracking-widest text-brand-sage uppercase">Organic</span>
+    </div>
+    <div class="text-slate-400 text-xs font-light">
+      Waste less. Farm smarter. Grow better.
+    </div>
+  </footer>
+
+</body>
+</html>

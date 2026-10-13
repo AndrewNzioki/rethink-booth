@@ -1,0 +1,13 @@
+/* Custom styles for Rethink Organic Booth */
+
+/* Abstract Circles Animation */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+/* Ensure images don't break layout if missing */
+img {
+  max-width: 100%;
+  height: auto;
+}
